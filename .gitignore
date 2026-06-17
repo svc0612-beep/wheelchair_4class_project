@@ -1,0 +1,36 @@
+﻿# Datasets and generated data
+raw_data/
+dataset_auto_4class/
+labeling_sample/
+
+# Training outputs
+runs/
+models/
+
+# Model weights and exported artifacts
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+*.pb
+
+# Large exploratory notebooks
+abvd.ipynb
+
+# Notebook checkpoints and caches
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+*.cache
+
+# Local environment
+.venv/
+venv/
+.env
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

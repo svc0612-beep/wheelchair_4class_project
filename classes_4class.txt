@@ -1,0 +1,4 @@
+wheelchair
+wheelchair_user
+non_wheelchair_person
+other_object

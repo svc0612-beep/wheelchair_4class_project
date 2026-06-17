@@ -1,0 +1,26 @@
+cd "C:\Users\USER\OneDrive\바탕 화면\wheelchair_4class_project"
+python scripts\07_dual_model_webcam.py
+
+프로젝트 폴더 생성
+Roboflow 휠체어 데이터 다운로드
+원본 라벨 구조 확인
+4클래스 라벨 구조 설계
+자동 라벨링 코드 작성
+자동 라벨링 데이터셋 생성
+4클래스 YOLO 학습 코드 작성
+YOLOv8n 4클래스 모델 학습
+학습 결과 이미지 예측 테스트
+OpenCV 웹캠 환경 수정
+원본 웹캠 연결 테스트
+4클래스 YOLO 웹캠 테스트
+단일 4클래스 모델 한계 확인
+듀얼 모델 구조로 방향 변경
+듀얼 모델 웹캠 코드 작성
+카메라 자동 선택 및 종료 로직 수정
+듀얼 모델 웹캠 최종 테스트 완료
+- 듀얼 모델은 YOLO 모델 2개를 동시에 쓰는 방식
+(1. 커스텀 모델로 wheelchair, wheelchair_user 탐지
+ 2.기본 YOLO 모델로 person, chair, bicycle, car 같은 일반 객체 탐지
+ 3. 커스텀 모델의 non_wheelchair_person, other_object는 숨김
+ 4. 두 모델 결과를 한 화면에 같이 그림
+ 5. 박스가 겹치면 wheelchair_user, wheelchair를 우선 표시)
